@@ -1,7 +1,7 @@
 'use strict';
 
-describe('myApp.version module', function() {
-  beforeEach(module('myApp.version'));
+describe('nasApp.version module', function() {
+  beforeEach(module('nasApp.version'));
 
   describe('interpolate filter', function() {
     beforeEach(module(function($provide) {
