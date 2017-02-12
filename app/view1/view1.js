@@ -1,5 +1,3 @@
-'use strict';
-
 angular.module('nasApp.view1', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
@@ -9,6 +7,8 @@ angular.module('nasApp.view1', ['ngRoute'])
   });
 }])
 
-.controller('View1Ctrl', [function() {
+.controller('View1Ctrl', [function(nasaService) {
+
+  nasaService.getMarsPhotos(1000);
 
 }]);
